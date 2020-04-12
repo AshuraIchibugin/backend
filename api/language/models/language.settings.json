@@ -12,6 +12,18 @@
   "attributes": {
     "lang": {
       "type": "string"
+    },
+    "aboutuses": {
+      "via": "language",
+      "collection": "aboutus"
+    },
+    "cards": {
+      "collection": "card",
+      "via": "language"
+    },
+    "homes": {
+      "collection": "home",
+      "via": "language"
     }
   }
 }

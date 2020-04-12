@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "aboutuses",
+  "info": {
+    "name": "Aboutus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "language": {
+      "model": "language",
+      "via": "aboutuses"
+    },
+    "ourpurposes": {
+      "collection": "ourpurpose",
+      "via": "aboutus"
+    }
+  }
+}

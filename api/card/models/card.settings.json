@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "homes",
+  "collectionName": "cards",
   "info": {
-    "name": "home"
+    "name": "card"
   },
   "options": {
     "increments": true,
@@ -16,8 +16,17 @@
     "description": {
       "type": "text"
     },
+    "slug": {
+      "type": "string"
+    },
+    "main_image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
     "language": {
-      "via": "homes",
+      "via": "cards",
       "model": "language"
     }
   }
